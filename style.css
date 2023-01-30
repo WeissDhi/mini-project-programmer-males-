@@ -211,8 +211,8 @@ p {
 
 .portfolio:hover {
 
-    box-shadow: -1px 4px 20px 0px rgba(0, 29, 220, 0.8);
-    zoom: 1.1;
+    box-shadow: -1px 4px 20px 0px rgb(27, 105, 201);
+    zoom: 1.07;
   }
 
 .portfolio img {
@@ -304,6 +304,10 @@ p {
   
   .footer-distributed .footer-center i.fa-envelope{
     font-size: 17px;
+    line-height: 38px;
+  }
+  .footer-distributed .footer-center i.fa-whatsapp{
+    font-size: 23px;
     line-height: 38px;
   }
   
