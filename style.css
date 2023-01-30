@@ -154,7 +154,6 @@ p {
     width: 100%;
     margin-top: 1px;
 }
-
 .skill-list {
     width: 100%;
     position: relative;
@@ -169,7 +168,6 @@ p {
 
 .skill img {
     width: 80%;
-    border-radius: 0%;
 }
 
 .skill p {
@@ -180,16 +178,56 @@ p {
     color: #364f6b;
 }
 
-.section {
+.bawah {
+  text-align: center;
+  width: 100%;
+  margin-top: 1px;
+}
+.portfolio-list {
     width: 100%;
-    display: inline-block;
-    background: #333;
-    height: 50vh;
-    text-align: center;
-    font-size: 22px;
-    font-weight: 700;
-    text-decoration: underline;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.portfolio-list2 {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+.portfolio {
+    width: 20%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: 2px solid rgb(245, 245, 255) ;
+    box-shadow: -1px 4px 20px 0px rgba(224, 216, 216, 0.8);
   }
+
+.portfolio:hover {
+
+    box-shadow: -1px 4px 20px 0px rgba(0, 29, 220, 0.8);
+    zoom: 1.1;
+  }
+
+.portfolio img {
+    width: 80%;
+    border-radius: 10px
+}
+
+.portfolio p {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: #364f6b;
+}
+
   
   .footer-distributed{
     background: rgb(27, 105, 201);
