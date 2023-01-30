@@ -1,0 +1,41 @@
+
+.tengah {
+    text-align: center;
+    width: 100%;
+    margin-top: 1px;
+}
+.skill-list {
+    width: 100%;
+    overflow-x: scroll; /* only horizontal scrollbar */
+    display: flex;
+    flex-wrap: wrap; /* wrap the elements to a new line if not enough space */
+}
+
+.skill {
+    width: 20%;
+    margin: 0 auto;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: 2px solid rgb(245, 245, 255) ;
+    box-shadow: -1px 4px 20px 0px rgba(224, 216, 216, 0.8);
+    margin-bottom: 10px;
+    border-radius: 10%;
+}
+  
+
+.skill img {
+    width: 80%;
+}
+
+.skill p {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: #364f6b;
+}
+
+
+  
+  
+  
