@@ -15,14 +15,11 @@ body {
     font-family: 'Open Sans',sans-serif;
 }
 
-
-
 .wrapper {
     width: 1100px;
     margin: auto;
     position: relative;
 }
-
 
 .logo a {
     font-size: 50px;
@@ -37,7 +34,6 @@ body {
      font-size: 45px;
      color: #1581b2;
 }
-
 
 .menu {
     float: right;
