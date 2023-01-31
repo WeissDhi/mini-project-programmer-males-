@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Quicksand:wght@400;700&family=Roboto:ital,wght@0,100;1,100&display=swap');
+html{
+  scroll-behavior: smooth;
+}
 * {
     text-decoration: none;
     margin: 0px;
@@ -12,19 +15,7 @@ body {
     font-family: 'Open Sans',sans-serif;
 }
 
-.gambar {
-    padding-top: 20px;
-    animation: float 3s linear infinite;
-}
 
-@keyframes float{
-    0%, 100%{
-        transform: translateY(0rem);
-    }
-    50%{
-        transform: translateY(-3.5rem);
-    }
-}
 
 .wrapper {
     width: 1100px;
@@ -38,7 +29,7 @@ body {
     font-weight: 800;
     float: left;
     font-family: 'Quicksand', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #364f6b;
+    color: #021075;
 
 }
 .logo span {
@@ -60,9 +51,9 @@ nav {
     position: sticky;
     position: -webkit-sticky; 
     top: 0;
-    background: #FFFFFF;
+    background: #ffffff;
     z-index: 1;
-    border-bottom:1px solid #364f6b;
+    border-bottom:1px solid #000000;
 }
 
 nav ul {
@@ -77,7 +68,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: black;
+    color: rgb(86, 45, 180);
     font-weight: bold;
     text-align: center;
     padding: 0px 16px 0px 16px;
@@ -85,7 +76,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration:underline;
     color: #3f72af;
 }
 
@@ -100,7 +91,19 @@ section {
     margin-bottom:100px;
 }
 
+.gambar {
+  padding-top: 20px;
+  animation: float 3s linear infinite;
+}
 
+@keyframes float{
+  0%, 100%{
+      transform: translateY(0rem);
+  }
+  50%{
+      transform: translateY(-3.5rem);
+  }
+}
 
 h2 {
     font-family: 'comic sans ms';
@@ -116,7 +119,8 @@ h2 {
 }
 
 a.tbl-contact {
-    background: #3f72af;
+    background: #021075;
+    
     border-radius: 20px;
     margin-top: 20px;
     padding: 15px 20px 15px 20px;
@@ -126,7 +130,8 @@ a.tbl-contact {
 }
 
 a.tbl-contact:hover {
-    background: #021075;
+    background: #3f72af;
+    color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -206,14 +211,13 @@ p {
     width: 20%;
     margin: 0 auto;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 15px;
     background-color: #ffffff;
     border: 2px solid rgb(245, 245, 255) ;
     box-shadow: -1px 4px 20px 0px rgba(224, 216, 216, 0.8);
   }
 
 .portfolio:hover {
-
     box-shadow: -1px 4px 20px 0px rgb(27, 105, 201);
     zoom: 1.07;
   }
@@ -232,7 +236,7 @@ p {
 }
 
   
-  .footer-distributed{
+.footer-distributed{
     background: rgb(27, 105, 201);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
@@ -242,57 +246,48 @@ p {
     padding: 55px 50px;
   }
   
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-right{
-    display: inline-block;
-    vertical-align: top;
-  }
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
   
-  /* Footer left */
+.footer-distributed .footer-left{
+    width: 40%; 
+    margin-right:-125px;
+}
   
-  .footer-distributed .footer-left{
-    width: 40%;
-    margin-right: -125px;
-  }
-  
-  /* The company logo */
-  
-  .footer-distributed h3{
+.footer-distributed h3{
     font-size: 50px;
     font-weight: 800;
     float: left;
     font-family: 'Quicksand', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #000102;
-  }
+}
   
-  .footer-distributed h3 span{
+.footer-distributed h3 span{
     font-family: 'Poppins', sans-serif;
     font-size: 45px;
     color: #f6f6f6;
-  }
-  
-  /* Footer links */
-  
-  .footer-distributed .footer-logo{
+}
 
+.footer-distributed .footer-logo{
     color: white !important;;
     font-size: 16px;
     font-weight: normal;
     margin: 0;
     margin-top: 79px;
     margin-left: 4px ;
-  }
+}
   
-  /* Footer Center */
-
-  .footer-distributed .footer-center{
+.footer-distributed .footer-center{
     width: 35%;
-    margin-right: auto;
-    margin-right: 125px;
-  }
+    margin-left: 75px;
+    margin-right: 95px;
+}
   
-  .footer-distributed .footer-center i{
+.footer-distributed .footer-center i{
     background-color:  #33383b;
     color: #ffffff;
     font-size: 25px;
@@ -303,39 +298,34 @@ p {
     line-height: 42px;
     margin: 10px 15px;
     vertical-align: middle;
-  }
+}
   
-  .footer-distributed .footer-center i.fa-envelope{
+.footer-distributed .footer-center i.fa-envelope{
     font-size: 17px;
     line-height: 38px;
-  }
-  .footer-distributed .footer-center i.fa-whatsapp{
+}
+
+.footer-distributed .footer-center i.fa-whatsapp{
     font-size: 23px;
     line-height: 38px;
-  }
+}
   
-  .footer-distributed .footer-center p{
+.footer-distributed .footer-center p{
     display: inline-block;
     color: #ffffff;
     font-weight:400;
     vertical-align: middle;
     margin:0;
-  }
+}
   
-  .footer-distributed .footer-center p span{
+.footer-distributed .footer-center p span{
     display:block;
     font-weight: normal;
     font-size:18px;
     line-height:2;
-  }
-  
-  .footer-distributed .footer-center p a{
-    color: #ffffff;;
-    text-decoration: none;;
-  }
+}
 
-  
-  .footer-distributed .footer-links a:before {
+.footer-distributed .footer-links a:before {
     content: "|";
     font-weight:300;
     font-size: 20px;
@@ -343,54 +333,46 @@ p {
     color: #fff;
     display: inline-block;
     padding-right: 5px;
-  }
-  
-  .footer-distributed .footer-links .link-1:before {
-    content: none;
-  }
-  
-  /* Footer Right */
-  
-  .footer-distributed .footer-right{
+}
+
+.footer-distributed .footer-right{
     width: 20%;
-  }
+}
   
-  .footer-distributed .footer-about{
+.footer-distributed .footer-about{
     line-height: 20px;
     color:  rgb(236, 215, 215);
     font-size: 14px;
     font-weight: normal;
     margin: 0;
-  }
+}
   
-  .footer-distributed .footer-about span{
+.footer-distributed .footer-about span{
     display: block;
     color:  #ffffff;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px;
-  }
+}
   
-  .footer-distributed .footer-icons{
+.footer-distributed .footer-icons{
     margin-top: 25px;
-  }
+}
   
-  .footer-distributed .footer-icons a{
+.footer-distributed .footer-icons a{
     display: inline-block;
     width: 35px;
     height: 35px;
     cursor: pointer;
     background-color:  #33383b;
-    border-radius: 2px;
-  
+    border-radius: 2px; 
     font-size: 20px;
     color: #ffffff;
     text-align: center;
-    line-height: 35px;
-  
+    line-height: 35px; 
     margin-right: 3px;
     margin-bottom: 5px;
-  }
+}
   
   
   
